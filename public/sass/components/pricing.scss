@@ -1,0 +1,135 @@
+.pricing-container {
+  //   border: 1px solid red;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-header {
+  //   border: 1px solid green;
+  width: 33.75rem;
+
+  margin-bottom: 6.5625rem;
+
+  &--title {
+    font-size: 2rem;
+    color: $heading;
+    text-align: center;
+  }
+
+  &--subtitle {
+    font-size: 1rem;
+    color: $body;
+    text-align: center;
+    line-height: 1.5625rem;
+  }
+}
+
+.pricing-card {
+  &--parent {
+    // border: 1px solid yellow;
+    max-width: 57.5rem;
+    margin-bottom: 12.6875rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-container {
+    border-radius: 0.5rem;
+    width: 48.5%;
+
+    &--dark {
+      background: $accent-dark;
+      color: $heading;
+      position: relative;
+
+      padding: 3.125rem 2.40625rem;
+
+      &::before {
+        content: url(../assets/icon-free.svg);
+        position: absolute;
+        top: -1.5rem;
+        left: 2.40625rem;
+      }
+    }
+
+    &--light {
+      background: $accent-light;
+      color: $background;
+      position: relative;
+
+      padding: 3.75rem 2.40625rem;
+
+      &::before {
+        content: url(../assets/icon-paid.svg);
+        position: absolute;
+        top: -2.125rem;
+        left: 2.40625rem;
+      }
+    }
+  }
+
+  &--header {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+
+    margin-bottom: 1rem;
+  }
+
+  &--description {
+    opacity: 0.6;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  &--price {
+    font-size: 2.5rem;
+
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+
+    &--ratio {
+      opacity: 0.6;
+      font-size: 1rem;
+      line-height: 1.5625rem;
+
+      margin-left: 0.5rem;
+    }
+  }
+
+  &--features {
+    list-style: none;
+  }
+}
+
+.feature-light {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    content: "✓";
+    margin-right: 1rem;
+    color: $accent-light;
+  }
+}
+
+.feature {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &::before {
+    content: "✓";
+    margin-right: 0.5rem;
+  }
+}

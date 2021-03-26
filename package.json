@@ -4,7 +4,7 @@
   "description": "![Design preview for the Maker pre-launch landing page coding challenge](./preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass public/sass/main.scss public/css/styles.css -w"
   },
   "keywords": [],
   "author": "",

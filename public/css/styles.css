@@ -1,0 +1,198 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+
+body {
+  background: #080c20;
+  font-family: "Manrope", sans-serif;
+  color: #fff;
+  overflow-x: hidden; }
+
+nav {
+  width: 100%;
+  height: 25vh;
+  padding: 5rem 0 0 10.3125rem;
+  transform: translateY(-1rem); }
+
+.hero-container {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.hero-left {
+  height: 100%;
+  width: 25.5rem;
+  background-image: url(../assets/illustration-hero-left.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translateX(-3rem); }
+
+.header-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/bg-hero-squiggle.svg);
+  background-size: 90%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 0 1rem; }
+
+.hero-right {
+  height: 100%;
+  width: 25.5rem;
+  background-image: url(../assets/illustration-hero-right.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translateX(3rem); }
+
+.hero-header {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem; }
+  .hero-header--green {
+    color: #3ee9e5; }
+
+.hero-subtext {
+  font-size: 1rem;
+  color: #777f98;
+  text-align: center;
+  line-height: 1.5625rem;
+  margin-bottom: 4rem; }
+
+.feature-container {
+  width: 100%;
+  height: 23.9375rem;
+  margin: 12.625rem 0;
+  padding: 0 8rem;
+  display: flex; }
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 90%; }
+  .feature-card:not(:last-child) {
+    margin-right: 1.875rem; }
+  .feature-card--end {
+    align-self: flex-end; }
+
+.feature-image--container {
+  width: 10rem;
+  height: 10rem;
+  background: #093f68;
+  border-radius: 2.8125rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem; }
+
+.feature-header {
+  margin-bottom: 1.5rem;
+  font-weight: 800; }
+
+.feature-description {
+  color: #777f98; }
+
+.pricing-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.pricing-header {
+  width: 33.75rem;
+  margin-bottom: 6.5625rem; }
+  .pricing-header--title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center; }
+  .pricing-header--subtitle {
+    font-size: 1rem;
+    color: #777f98;
+    text-align: center;
+    line-height: 1.5625rem; }
+
+.pricing-card--parent {
+  max-width: 57.5rem;
+  margin-bottom: 12.6875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.pricing-card-container {
+  border-radius: 0.5rem;
+  width: 48.5%; }
+  .pricing-card-container--dark {
+    background: #093f68;
+    color: #fff;
+    position: relative;
+    padding: 3.125rem 2.40625rem; }
+    .pricing-card-container--dark::before {
+      content: url(../assets/icon-free.svg);
+      position: absolute;
+      top: -1.5rem;
+      left: 2.40625rem; }
+  .pricing-card-container--light {
+    background: #3ee9e5;
+    color: #080c20;
+    position: relative;
+    padding: 3.75rem 2.40625rem; }
+    .pricing-card-container--light::before {
+      content: url(../assets/icon-paid.svg);
+      position: absolute;
+      top: -2.125rem;
+      left: 2.40625rem; }
+
+.pricing-card--header {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-bottom: 1rem; }
+
+.pricing-card--description {
+  opacity: 0.6;
+  font-size: 1rem;
+  line-height: 1.5625rem;
+  margin-bottom: 1.5rem; }
+
+.pricing-card--price {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+  .pricing-card--price--ratio {
+    opacity: 0.6;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+    margin-left: 0.5rem; }
+
+.pricing-card--features {
+  list-style: none; }
+
+.feature-light:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.feature-light::before {
+  content: "✓";
+  margin-right: 1rem;
+  color: #3ee9e5; }
+
+.feature:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.feature::before {
+  content: "✓";
+  margin-right: 0.5rem; }
