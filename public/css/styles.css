@@ -217,7 +217,8 @@ footer {
 
 .form-container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .email {
   width: 20rem;
@@ -230,6 +231,9 @@ footer {
   color: #fff;
   line-height: 1.5625rem;
   border: none; }
+  .email:focus {
+    box-shadow: 0 0 0 0.35rem #080c20, 0 0 0 0.65rem #093f68;
+    outline: none; }
 
 button {
   font-size: 1rem;
@@ -242,3 +246,19 @@ button {
   border: none;
   cursor: pointer;
   padding: 0.75rem 1.125rem; }
+  button:focus {
+    box-shadow: 0 0 0 0.35rem #080c20, 0 0 0 0.65rem #3ee9e5;
+    outline: none; }
+
+.error-message {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 1.1rem;
+  display: none;
+  color: #ff2965; }
+
+.show-error {
+  display: block; }
+
+.show-error--border {
+  border: 1px solid #ff2965; }
