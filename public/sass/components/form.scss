@@ -1,7 +1,6 @@
 footer {
   width: 100%;
   height: 14.25rem;
-  //   border: 1px solid red;
   margin-bottom: 7.3125rem;
   background-image: url(../assets/bg-footer-squiggle.svg);
   background-size: contain;
@@ -25,6 +24,13 @@ footer {
   display: flex;
   align-items: center;
   position: relative;
+
+  @include respond(mobile) {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 
 .email {
@@ -44,6 +50,11 @@ footer {
     box-shadow: 0 0 0 0.35rem $background, 0 0 0 0.65rem $accent-dark;
     outline: none;
   }
+
+  @include respond(mobile) {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 button {
@@ -62,6 +73,10 @@ button {
   &:focus {
     box-shadow: 0 0 0 0.35rem $background, 0 0 0 0.65rem $accent-light;
     outline: none;
+  }
+
+  @include respond(mobile) {
+    width: 100%;
   }
 }
 

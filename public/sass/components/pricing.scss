@@ -1,15 +1,20 @@
 .pricing-container {
-  //   border: 1px solid red;
-
   width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include respond(tab-land) {
+    padding: 0 1rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 3rem;
+  }
 }
 
 .pricing-header {
-  //   border: 1px solid green;
   width: 33.75rem;
 
   margin-bottom: 6.5625rem;
@@ -26,22 +31,36 @@
     text-align: center;
     line-height: 1.5625rem;
   }
+
+  @include respond(mobile) {
+    width: 100%;
+  }
 }
 
 .pricing-card {
   &--parent {
-    // border: 1px solid yellow;
     max-width: 57.5rem;
     margin-bottom: 12.6875rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+      width: 100%;
+    }
   }
 
   &-container {
     border-radius: 0.5rem;
     width: 48.5%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &--dark {
       background: $accent-dark;
@@ -49,6 +68,10 @@
       position: relative;
 
       padding: 3.125rem 2.40625rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 4rem;
+      }
 
       &::before {
         content: url(../assets/icon-free.svg);

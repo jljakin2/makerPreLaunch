@@ -21,23 +21,42 @@ nav {
   height: 25vh;
   padding: 5rem 0 0 10.3125rem;
   transform: translateY(-1rem); }
+  @media only screen and (max-width: 50em) {
+    nav {
+      height: 15vh;
+      padding: 3rem 2.375rem; } }
+  @media only screen and (max-width: 43.75em) {
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(0); } }
 
 .hero-container {
-  height: 65vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 50em) {
+    .hero-container {
+      flex-direction: column;
+      height: 100%; } }
 
 .hero-left {
   height: 100%;
   width: 25.5rem;
-  background-image: url(../assets/illustration-hero-left.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
   transform: translateX(-3rem); }
+  @media only screen and (max-width: 50em) {
+    .hero-left {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.96875rem; } }
+  .hero-left__image {
+    width: 118%; }
 
 .header-container {
-  width: 50%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,14 +66,19 @@ nav {
   background-position: top;
   background-repeat: no-repeat;
   padding: 0 1rem; }
+  @media only screen and (max-width: 50em) {
+    .header-container {
+      background-image: none; } }
 
 .hero-right {
   height: 100%;
   width: 25.5rem;
-  background-image: url(../assets/illustration-hero-right.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
   transform: translateX(3rem); }
+  @media only screen and (max-width: 50em) {
+    .hero-right {
+      display: none; } }
+  .hero-right__image {
+    width: 100%; }
 
 .hero-header {
   font-size: 3rem;
@@ -64,6 +88,9 @@ nav {
   margin-bottom: 1.5rem; }
   .hero-header--green {
     color: #3ee9e5; }
+  @media only screen and (max-width: 50em) {
+    .hero-header {
+      font-size: 2rem; } }
 
 .hero-subtext {
   font-size: 1rem;
@@ -78,16 +105,48 @@ nav {
   margin: 12.625rem 0;
   padding: 0 8rem;
   display: flex; }
+  @media only screen and (max-width: 50em) {
+    .feature-container {
+      flex-direction: column;
+      height: 100%;
+      margin: 6.8125rem 0; } }
+  @media only screen and (max-width: 43.75em) {
+    .feature-container {
+      align-items: center; } }
 
 .feature-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 90%; }
+  @media only screen and (max-width: 50em) {
+    .feature-card {
+      flex-direction: row;
+      height: 100%;
+      width: 90%;
+      margin-bottom: 2.5rem;
+      align-items: center; } }
+  @media only screen and (max-width: 43.75em) {
+    .feature-card {
+      flex-direction: column;
+      text-align: center;
+      width: 100%; } }
   .feature-card:not(:last-child) {
     margin-right: 1.875rem; }
+    @media only screen and (max-width: 50em) {
+      .feature-card:not(:last-child) {
+        margin: 0; } }
+    @media only screen and (max-width: 43.75em) {
+      .feature-card:not(:last-child) {
+        margin: 3.5rem; } }
   .feature-card--end {
     align-self: flex-end; }
+    @media only screen and (max-width: 50em) {
+      .feature-card--end {
+        justify-self: flex-end; } }
+    @media only screen and (max-width: 43.75em) {
+      .feature-card--end {
+        align-self: center; } }
 
 .feature-image--container {
   width: 10rem;
@@ -99,6 +158,24 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem; }
+  @media only screen and (max-width: 50em) {
+    .feature-image--container {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin-right: 3.4375rem;
+      margin-top: 3rem; } }
+  @media only screen and (max-width: 50em) {
+    .feature-image--container {
+      margin-right: 0;
+      margin-top: 0; } }
+
+.feature-text--container {
+  flex-direction: column; }
+  @media only screen and (max-width: 50em) {
+    .feature-text--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .feature-header {
   margin-bottom: 1.5rem;
@@ -112,6 +189,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 62.5em) {
+    .pricing-container {
+      padding: 0 1rem; } }
+  @media only screen and (max-width: 50em) {
+    .pricing-container {
+      padding: 0 3rem; } }
 
 .pricing-header {
   width: 33.75rem;
@@ -125,6 +208,9 @@ nav {
     color: #777f98;
     text-align: center;
     line-height: 1.5625rem; }
+  @media only screen and (max-width: 43.75em) {
+    .pricing-header {
+      width: 100%; } }
 
 .pricing-card--parent {
   max-width: 57.5rem;
@@ -132,15 +218,27 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 50em) {
+    .pricing-card--parent {
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+      width: 100%; } }
 
 .pricing-card-container {
   border-radius: 0.5rem;
   width: 48.5%; }
+  @media only screen and (max-width: 50em) {
+    .pricing-card-container {
+      width: 100%; } }
   .pricing-card-container--dark {
     background: #093f68;
     color: #fff;
     position: relative;
     padding: 3.125rem 2.40625rem; }
+    @media only screen and (max-width: 50em) {
+      .pricing-card-container--dark {
+        margin-bottom: 4rem; } }
     .pricing-card-container--dark::before {
       content: url(../assets/icon-free.svg);
       position: absolute;
@@ -219,6 +317,12 @@ footer {
   display: flex;
   align-items: center;
   position: relative; }
+  @media only screen and (max-width: 43.75em) {
+    .form-container {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      padding: 0 2rem; } }
 
 .email {
   width: 20rem;
@@ -234,6 +338,10 @@ footer {
   .email:focus {
     box-shadow: 0 0 0 0.35rem #080c20, 0 0 0 0.65rem #093f68;
     outline: none; }
+  @media only screen and (max-width: 43.75em) {
+    .email {
+      width: 100%;
+      margin-bottom: 1rem; } }
 
 button {
   font-size: 1rem;
@@ -249,6 +357,9 @@ button {
   button:focus {
     box-shadow: 0 0 0 0.35rem #080c20, 0 0 0 0.65rem #3ee9e5;
     outline: none; }
+  @media only screen and (max-width: 43.75em) {
+    button {
+      width: 100%; } }
 
 .error-message {
   position: absolute;

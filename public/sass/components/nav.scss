@@ -3,4 +3,16 @@ nav {
   height: 25vh;
   padding: 5rem 0 0 10.3125rem;
   transform: translateY(-1rem);
+
+  @include respond(tab-port) {
+    height: 15vh;
+    padding: 3rem 2.375rem;
+  }
+
+  @include respond(mobile) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+  }
 }

@@ -19,7 +19,13 @@
       <img src="./public/assets/logo.svg" alt="logo" class="logo">
     </nav>
     <div class="hero-container">
-      <div class="hero-left"></div>
+      <div class="hero-left">
+        <picture>
+          <source srcset="./public/assets/illustration-hero-mobile.png" class="hero-left__image"
+            media="(max-width: 50em)">
+          <img src="./public/assets/illustration-hero-left.svg" class="hero-left__image" alt="people learning" />
+        </picture>
+      </div>
       <div class="header-container">
         <h1 class="hero-header">Get paid for the work you <span class="hero-header--green">love</span> to do.</h1>
         <p class="hero-subtext">The 9-5 grind is so last century. We believe in living life on your
@@ -27,7 +33,9 @@
           a side hustle, we’ve got you covered.</p>
         <img src="./public/assets/icon-scroll.svg" alt="scroll icon" class="scroll-icon">
       </div>
-      <div class="hero-right"></div>
+      <div class="hero-right">
+        <img srcset="./public/assets/illustration-hero-right.svg" class="hero-right__image" alt="people learning" />
+      </div>
     </div>
   </header>
   <main>
@@ -37,33 +45,42 @@
           <img src="./public/assets/illustration-passions.svg" alt="icon for passion" class="feature-image"
             style="transform: translateX(0.5rem);">
         </div>
-        <h3 class="feature-header">Indulge your passions</h3>
-        <p class="feature-description">Your passions shouldn't be just for the weekend. Earn a living doing what you
-          love.</p>
+        <div class="feature-text--container">
+          <h3 class="feature-header">Indulge your passions</h3>
+          <p class="feature-description">Your passions shouldn't be just for the weekend. Earn a living doing what you
+            love.</p>
+        </div>
       </div>
       <div class="feature-card feature-card--end">
         <div class="feature-image--container">
           <img src="./public/assets/illustration-financial-freedom.svg" alt="icon for freedom" class="feature-image">
         </div>
-        <h3 class="feature-header">Gain financial freedom</h3>
-        <p class="feature-description">Start making money work for you. There’s nothing quite like earning while you
-          sleep.</p>
+        <div class="feature-text--container">
+          <h3 class="feature-header">Gain financial freedom</h3>
+          <p class="feature-description">Start making money work for you. There’s nothing quite like earning while you
+            sleep.</p>
+        </div>
       </div>
       <div class="feature-card">
         <div class="feature-image--container">
           <img src="./public/assets/illustration-lifestyle.svg" alt="icon for choosing lifestyle" class="feature-image">
         </div>
-        <h3 class="feature-header">Choose your lifestyle</h3>
-        <p class="feature-description">Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
+        <div class="feature-text--container">
+          <h3 class="feature-header">Choose your lifestyle</h3>
+          <p class="feature-description">Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.
+          </p>
+        </div>
       </div>
       <div class="feature-card feature-card--end">
         <div class="feature-image--container">
           <img src="./public/assets/illustration-work-anywhere.svg" alt="icon for work from anywhere"
             class="feature-image">
         </div>
-        <h3 class="feature-header">Work from anywhere</h3>
-        <p class="feature-description">Selling online means not being pinned down. Want to work AND travel? Go for it!
-        </p>
+        <div class="feature-text--container">
+          <h3 class="feature-header">Work from anywhere</h3>
+          <p class="feature-description">Selling online means not being pinned down. Want to work AND travel? Go for it!
+          </p>
+        </div>
       </div>
     </section>
     <section class="pricing-container">
