@@ -26,11 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./images/screenshot.png)
+![Screenshot]()
 
 ### Links
 
-- Live Site URL: [link](https://blogr-murex.vercel.app/)
+- Live Site URL: [link]()
 
 ## My process
 
